@@ -8,7 +8,7 @@ abstract class ListItem{
 
 //2.heading item//
 class HeadingItem implements ListItem  {
-  final String heading, ; //isi judul
+  final String heading; //isi judul
   HeadingItem(this.heading); //constructor
 
   @override
