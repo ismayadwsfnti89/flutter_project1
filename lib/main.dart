@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project1/tugas_listitem.dart';
+import 'package:flutter_project1/profile_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,7 +10,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: "aplikasi flutter", home: LayoutListitem());
+    return const MaterialApp(title: "aplikasi flutter", home: MayaWidget());
   }
 }
  

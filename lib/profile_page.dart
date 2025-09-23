@@ -9,7 +9,7 @@ class MayaWidget extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'layout ismaya ',
-          style: TextStyle(color: Colors.blue),
+          style: TextStyle(color: const Color.fromARGB(255, 6, 46, 78)),
         ),
         backgroundColor: Colors.amber,
       ),

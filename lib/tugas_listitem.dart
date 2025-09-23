@@ -30,7 +30,7 @@ class MessageItem implements ListItem {
   @override
   Widget buildSubtitle (BuildContext context) => Text(produk);
   }
-
+//4.image item/
   //--widget utama
   class LayoutListitem extends StatelessWidget{
     const LayoutListitem({super.key});
@@ -39,10 +39,10 @@ class MessageItem implements ListItem {
     Widget build(BuildContext context) {
       //4.data contoh//
       final List<ListItem> items = List<ListItem>.generate(
-        30,
-        (i) => i % 6 == 0
+        31,
+        (i) => i % 5 == 0
              ? HeadingItem('Heading ')
-             : MessageItem('Sender $i ','produk$i'),
+             : MessageItem('Sender $i ','images/prdk1.png$i'),
     );
     return Scaffold(
       appBar: AppBar(title: const Text("List dengan berbagai item")),
