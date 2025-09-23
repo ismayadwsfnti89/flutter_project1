@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 
 class SpacedList extends StatelessWidget {
   const SpacedList({super.key});
@@ -18,9 +16,32 @@ class SpacedList extends StatelessWidget {
           return SingleChildScrollView(
             child: ConstrainedBox(
               constraints: BoxConstraints(minHeight: Constraints.maxHeight),
-              child: Column(), ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: List.generate(
+                  itemCount,
+                  (index) => Card(
+                    margin: const EdgeInsets.all(8),
+                    color: Colors.blue [100 * (index + 2)],
+                    child: SizedBox(
+                      height: 100,
+                      child: Center(
+                        child: Text(
+                          "item $index"
+                        style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: font FontWeight.bold
+                          ),
+                        ),
+                      ),  
+                    ),
+                  ),
+                ),
+              )
+            ),
           );
-        }
+        },
       ),
     );
   }
