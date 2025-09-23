@@ -21,5 +21,6 @@ flutter:
   assets: 
    - images/smk.png
    - images/maya.jpg 
-   - images/prdk1.png
-   - images/prdk2.png
+   - images/cf.jpg
+   - images/sktfc.jpg
+   - images/fore.jpg
