@@ -8,7 +8,7 @@ class MayWidget extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('lisview')),
       body: ListView(
-        children: [
+        children: const [
           ListTile(leading: Icon(Icons.map), title: Text('Map')),
           ListTile(leading: Icon(Icons.photo_album), title: Text('Album')),
           ListTile(leading: Icon(Icons.phone), title: Text('Phone')),

@@ -7,31 +7,31 @@ class MayaWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'layout ismaya ',
-          style: TextStyle(color: Colors.blue),
+          style: TextStyle(color: Color.fromARGB(255, 6, 46, 78)),
         ),
         backgroundColor: Colors.amber,
       ),
       body: Column(
         children: [
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Image.asset(
             'images/maya.jpg',
             width: 200,
           ),
-          SizedBox(height: 5),
-          Text(
+          const SizedBox(height: 5),
+          const Text(
             'SMK YPC Tasikmalaya',
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 10),
-          Text(
+          const SizedBox(height: 10),
+          const Text(
             'Pengembangan Perangkat Lunak Dan Gim',
             style: TextStyle(fontSize: 18),
           ),
-          SizedBox(height: 10),
-          Row(
+          const SizedBox(height: 10),
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(children: [Icon(Icons.call), Text('Call')]),

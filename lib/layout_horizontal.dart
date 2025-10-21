@@ -6,7 +6,7 @@ class MyaWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('ListView Horizontal')),
+      appBar: AppBar(title: const Text('ListView Horizontal')),
       // Body berisi ListView Horizontal di dalam SizedBox dengan tinggi 150 
       body: SizedBox(
         height: 150,
