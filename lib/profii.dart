@@ -11,8 +11,11 @@ class idsWidget extends StatelessWidget{
     ),
     body: Column(
       children: [
-        Image.asset('images/maya.jpg'),
-        const SizedBox(height: 16),
+        const SizedBox(height: 10),
+          Image.asset(
+            'images/maya.jpg',
+            width: 200,
+          ),
 
         const Text('Ismaya Dewi Sofianti',style: TextStyle(fontSize: 24,fontWeight:  FontWeight.bold,),),
 
@@ -23,7 +26,8 @@ class idsWidget extends StatelessWidget{
 
         //baris ikon 
         const Row (mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [Column(children: [Icon(Icons.call),Text("call"),],),
+        children: [
+        Column(children: [Icon(Icons.call),Text("call"),],),
         Column(children: [Icon(Icons.map),Text('route'),],),
         Column(children: [Icon(Icons.share),],),],
           )
